@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@theme{
+    --color-primary-color:#FF7E01;
+    --color-secondary-color:#FAA935;
+    --font-primary-font:"Montserrat";
+}
