@@ -7,10 +7,14 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-blue-500: oklch(62.3% 0.214 259.815);
+    --color-indigo-600: oklch(51.1% 0.262 276.966);
+    --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --font-weight-semibold: 600;
+    --radius-lg: 0.5rem;
     --radius-3xl: 1.5rem;
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --default-transition-duration: 150ms;
@@ -198,6 +202,12 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .mr-17 {
+    margin-right: calc(var(--spacing) * 17);
+  }
+  .mr-17\.75 {
+    margin-right: calc(var(--spacing) * 17.75);
+  }
   .flex {
     display: flex;
   }
@@ -210,17 +220,47 @@
   .resize {
     resize: both;
   }
+  .flex-col {
+    flex-direction: column;
+  }
   .items-center {
     align-items: center;
   }
+  .items-start {
+    align-items: flex-start;
+  }
   .justify-between {
     justify-content: space-between;
+  }
+  .gap-0 {
+    gap: calc(var(--spacing) * 0);
   }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
   }
   .gap-1\.25 {
     gap: calc(var(--spacing) * 1.25);
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
+  .gap-2\.5 {
+    gap: calc(var(--spacing) * 2.5);
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
+  .gap-3\.75 {
+    gap: calc(var(--spacing) * 3.75);
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
+  }
+  .gap-6\.25 {
+    gap: calc(var(--spacing) * 6.25);
   }
   .gap-7 {
     gap: calc(var(--spacing) * 7);
@@ -233,6 +273,57 @@
   }
   .gap-9\.5 {
     gap: calc(var(--spacing) * 9.5);
+  }
+  .gap-17 {
+    gap: calc(var(--spacing) * 17);
+  }
+  .gap-17\.75 {
+    gap: calc(var(--spacing) * 17.75);
+  }
+  .gap-35 {
+    gap: calc(var(--spacing) * 35);
+  }
+  .gap-40 {
+    gap: calc(var(--spacing) * 40);
+  }
+  .gap-42 {
+    gap: calc(var(--spacing) * 42);
+  }
+  .gap-\[7\] {
+    gap: 7;
+  }
+  .gap-\[10\] {
+    gap: 10;
+  }
+  .gap-\[10p\] {
+    gap: 10p;
+  }
+  .gap-\[10px\] {
+    gap: 10px;
+  }
+  .gap-\[15px\] {
+    gap: 15px;
+  }
+  .gap-\[16\] {
+    gap: 16;
+  }
+  .gap-\[25p\] {
+    gap: 25p;
+  }
+  .gap-\[25px\] {
+    gap: 25px;
+  }
+  .gap-\[30px\] {
+    gap: 30px;
+  }
+  .gap-\[71\] {
+    gap: 71;
+  }
+  .gap-\[71px\] {
+    gap: 71px;
+  }
+  .gap-\[168px\] {
+    gap: 168px;
   }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
@@ -247,11 +338,23 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .p-10 {
+    padding: calc(var(--spacing) * 10);
+  }
+  .px-0 {
+    padding-inline: calc(var(--spacing) * 0);
+  }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
   .px-5\.25 {
     padding-inline: calc(var(--spacing) * 5.25);
+  }
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
+  }
+  .py-0 {
+    padding-block: calc(var(--spacing) * 0);
   }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
@@ -262,19 +365,38 @@
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
+  .py-7 {
+    padding-block: calc(var(--spacing) * 7);
+  }
+  .py-7\.5 {
+    padding-block: calc(var(--spacing) * 7.5);
+  }
+  .py-\[30px\] {
+    padding-block: 30px;
+  }
+  .pr-10 {
+    padding-right: calc(var(--spacing) * 10);
+  }
+  .pr-17 {
+    padding-right: calc(var(--spacing) * 17);
+  }
+  .pr-17\.75 {
+    padding-right: calc(var(--spacing) * 17.75);
+  }
+  .pr-\[71p\] {
+    padding-right: 71p;
+  }
+  .pr-\[71px\] {
+    padding-right: 71px;
+  }
   .font-primary-font {
     font-family: var(--font-primary-font);
   }
   .text-\[18px\] {
     font-size: 18px;
   }
-  .font-\[18\] {
-    --tw-font-weight: 18;
-    font-weight: 18;
-  }
-  .font-\[18px\] {
-    --tw-font-weight: 18px;
-    font-weight: 18px;
+  .text-\[64px\] {
+    font-size: 64px;
   }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
@@ -340,6 +462,11 @@
   .\32 xl\:px-40 {
     @media (width >= 96rem) {
       padding-inline: calc(var(--spacing) * 40);
+    }
+  }
+  .\32 xl\:px-\[160px\] {
+    @media (width >= 96rem) {
+      padding-inline: 160px;
     }
   }
 }
