@@ -219,6 +219,15 @@
   .top-1\.5 {
     top: calc(var(--spacing) * 1.5);
   }
+  .top-9 {
+    top: calc(var(--spacing) * 9);
+  }
+  .top-10 {
+    top: calc(var(--spacing) * 10);
+  }
+  .top-12 {
+    top: calc(var(--spacing) * 12);
+  }
   .right-10 {
     right: calc(var(--spacing) * 10);
   }
@@ -667,8 +676,17 @@
   .bg-\[url\(\.\/image\/\)\] {
     background-image: url(./image/);
   }
+  .bg-\[url\(\.\/image\/\.png\)\] {
+    background-image: url(./image/.png);
+  }
   .bg-\[url\(\.\/image\/About\.png\)\] {
     background-image: url(./image/About.png);
+  }
+  .bg-\[url\(\.\/image\/a\.png\)\] {
+    background-image: url(./image/a.png);
+  }
+  .bg-\[url\(\.\/image\/alltours\.png\)\] {
+    background-image: url(./image/alltours.png);
   }
   .bg-\[url\(\.\/imge\)\] {
     background-image: url(./imge);
@@ -699,6 +717,12 @@
   }
   .p-5 {
     padding: calc(var(--spacing) * 5);
+  }
+  .p-12 {
+    padding: calc(var(--spacing) * 12);
+  }
+  .p-12\.5 {
+    padding: calc(var(--spacing) * 12.5);
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
@@ -1299,6 +1323,11 @@
   .sm\:items-stretch {
     @media (width >= 40rem) {
       align-items: stretch;
+    }
+  }
+  .sm\:justify-normal {
+    @media (width >= 40rem) {
+      justify-content: normal;
     }
   }
   .sm\:gap-2 {
