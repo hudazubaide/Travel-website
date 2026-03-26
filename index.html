@@ -17,43 +17,62 @@
 <link href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body >
-  <header class="py-1.25 sticky top-0 z-50 bg-white"  >
-  <div class="container mx-auto flex justify-between items-center px-5 md:px-0 2xl:px-40 ">
+  <header class="py-1.25 sticky top-0 z-50 bg-white">
+  <div class="container mx-auto flex justify-between items-center px-5 md:px-0 2xl:px-40">
+    
     <div>
       <img src="./image/logo 1.png">
     </div>
-    <div class="flex md:hidden items-center text-2xl" >
-      <i class="fa-solid fa-bars"></i>
-    </div>
-    <div class="flex gap-9.5 justify-between items-center hidden md:flex" >
+
+     <div class="dropdown dropdown-bottom dropdown-end md:hidden">
+  
+  <div tabindex="0" role="button" class="btn btn-ghost">
+    <i class="fa-solid fa-bars text-2xl"></i>
+  </div>
+  <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+    <li><a href="./index.html" class="font-primary-font text-[18px] font-semibold hover:text-secondary-color">Home</a></li>
+    <li><a href="./About.html" class="font-primary-font text-[18px] font-semibold hover:text-secondary-color">About</a></li>
+    <li><a href="./Tours.html" class="font-primary-font text-[18px] font-semibold hover:text-secondary-color">Tours</a></li>
+    <li><a href="./Login.html" class="font-primary-font text-[18px] font-semibold hover:text-secondary-color">Login</a></li>
+    <button class="px-5.25 py-2 bg-primary-color rounded-3xl text-white transition duration-400 ease-in-out hover:bg-secondary-color font-primary-font text-[18px] font-semibold">
+              <a href="./Register.html">Register</a>
+            </button>
+  </ul>
+</div>
+    
+    <div class="gap-9.5 justify-between items-center hidden md:flex">
       <nav>
-        <ul class="flex gap-7.5 ">
-          <li class=" text-secondary-color font-primary-font text-[18px] font-semibold">
+        <ul class="flex gap-7.5">
+          <li class="text-secondary-color font-primary-font text-[18px] font-semibold">
             <a href="./index.html">Home</a>
           </li>
-          <li class=" transition  duration-400 ease-in-out hover:text-secondary-color font-primary-font text-[18px] font-semibold">
+          <li class="transition duration-400 ease-in-out hover:text-secondary-color font-primary-font text-[18px] font-semibold">
             <a href="./About.html">About</a>
           </li>
-          <li class="transition  duration-400 ease-in-out hover:text-secondary-color font-primary-font text-[18px] font-semibold">
-            <a href="./Tours.html" >Tours</a>
+          <li class="transition duration-400 ease-in-out hover:text-secondary-color font-primary-font text-[18px] font-semibold">
+            <a href="./Tours.html">Tours</a>
           </li>
-          </ul>
+        </ul>
       </nav>
       <nav>
-        <ul class="flex gap-1.25 ">
+        <ul class="flex gap-1.25">
           <li>
-            <button class="px-5.25 py-2 transition  duration-400 ease-in-out hover:text-secondary-color font-primary-font text-[18px] font-semibold"><a href="./Login.html"">Login</a></button>
+            <button class="px-5.25 py-2 transition duration-400 ease-in-out hover:text-secondary-color font-primary-font text-[18px] font-semibold">
+              <a href="./Login.html">Login</a>
+            </button>
           </li>
           <li>
-           <button class="px-5.25 py-2 bg-primary-color rounded-3xl text-white transition  duration-400 ease-in-out  hover:bg-secondary-color font-primary-font text-[18px] font-semibold"><a href="./Register.html">Register</a></button> 
+            <button class="px-5.25 py-2 bg-primary-color rounded-3xl text-white transition duration-400 ease-in-out hover:bg-secondary-color font-primary-font text-[18px] font-semibold">
+              <a href="./Register.html">Register</a>
+            </button>
           </li>
-
         </ul>
       </nav>
     </div>
+
   </div>
-  
 </header>
+<main>
 <section class="KnowBeforeYouGo py-12.5">
   <div class="container mx-auto flex flex-col items-center sm:items-stretch gap-5.75  px-5 md:px-0 2xl:px-40 ">
     <div class=" flex flex-col items-center justify-between lg:flex-row gap-5.75">
@@ -69,17 +88,24 @@
 
     </div>
     <div class="grid grid-cols-3 gap-2">
-      <div class="col-span-2 grid grid-cols-2 gap-2">
-      <img class="rounded-3xl border-3 border-secondary-color mb-10" src="./image/know1.png ">
-      <div class="relative mt-5 self-start" >
-      <img class=""  src="./image/kwon2.png">
-      <img class="absolute flex bottom-1 items-start p-5" src="./image/pause.svg">
-      </div>
-      </div>
-      <div class="col-span-1">
-      <img class="rounded-3xl border-3 border-secondary-color mt-10 self-center " src="./image/kwon3.png">
+  <div class="col-span-2 grid grid-cols-2 gap-2">
+
+    <div class="overflow-hidden rounded-3xl border-3 border-secondary-color mb-10">
+      <img class="transition duration-300 hover:scale-110 w-full h-full object-cover" src="./image/know1.png">
     </div>
+
+    <div class="relative mt-5 self-start overflow-hidden rounded-3xl">
+      <img class="transition duration-300 hover:scale-110 w-full" src="./image/kwon2.png">
+      <img class="absolute bottom-1 p-5" src="./image/pause.svg">
     </div>
+
+  </div>
+
+  <div class="col-span-1 overflow-hidden rounded-3xl border-3 border-secondary-color mt-10">
+    <img class="transition duration-300 hover:scale-110 w-full h-full object-cover" src="./image/kwon3.png">
+  </div>
+
+</div>
     </div>
     <div class=" flex flex-col sm:flex-row items-center shadow-lg rounded-3xl sm:rounded-full [box-shadow:1px_3px_10px_rgba(0,0,0,0.1)] w-fit px-10 sm:p-0 overflow-hidden">
       <div class="px-2 lg:px-10 py-6 flex gap-2.5 transition duration-500 ease-in-out hover:bg-gray-200   ">
@@ -155,67 +181,66 @@
     </div>
     <div class="flex flex-col md:flex-row gap-3.25 ">
       <div class="flex gap-3.25">
-    <div class="flex flex-col gap-2.5 items-center">
-      <div class="relative group">
-  <img class="brightness-40 contrast-130 transition duration-500 ease-in-out group-hover:scale-105 group-hover:brightness-100 group-hover:contrast-100 group-active:scale-105 group-active:brightness-100 group-active:contrast-100 " src="./image/LONDON.png">
-  <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white transition duration-500 group-hover:opacity-0 group-active:opacity-0">
-    <span class="font-Island-font text-[40px] sm:text-[48px]">Big Ben</span>
-    <span class="font-primary-font text-[16px] sm:text-[24px] font-medium">LONDON</span>
+        <div class="flex flex-col gap-2.5 items-center">
+          <div class="relative group select-none">
+            <img class="brightness-40 contrast-130 transition duration-500 ease-in-out group-hover:scale-105 group-hover:brightness-100 group-hover:contrast-100 group-active:scale-105 group-active:brightness-100 group-active:contrast-100" src="./image/LONDON.png">
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white transition duration-500 group-hover:opacity-0 group-active:opacity-0">
+              <span class="font-Island-font text-[40px] sm:text-[48px]">Big Ben</span>
+              <span class="font-primary-font text-[16px] sm:text-[24px] font-medium">LONDON</span>
+            </div>
+          </div>
+          <div class="relative group select-none">
+            <img class="brightness-50 contrast-130 transition duration-500 ease-in-out group-hover:scale-105 group-hover:brightness-100 group-hover:contrast-100 group-active:scale-105 group-active:brightness-100 group-active:contrast-100" src="./image/UAE.png">
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white transition duration-500 group-hover:opacity-0 group-active:opacity-0">
+              <span class="font-Island-font text-[40px] sm:text-[48px]">Dubai</span>
+              <span class="font-primary-font text-[16px] sm:text-[24px] font-medium">UAE</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2.5 items-center">
+          <div class="relative group select-none">
+            <img class="brightness-50 contrast-130 transition duration-500 ease-in-out group-hover:scale-105 group-hover:brightness-100 group-hover:contrast-100 group-active:scale-105 group-active:brightness-100 group-active:contrast-100" src="./image/INDONESIA.png">
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white transition duration-500 group-hover:opacity-0 group-active:opacity-0">
+              <span class="font-Island-font text-[40px] sm:text-[48px]">Bali</span>
+              <span class="font-primary-font text-[16px] sm:text-[24px] font-medium">INDONESIA</span>
+            </div>
+          </div>
+          <div class="relative group select-none">
+            <img class="brightness-50 contrast-130 transition duration-500 ease-in-out group-hover:scale-105 group-hover:brightness-100 group-hover:contrast-100 group-active:scale-105 group-active:brightness-100 group-active:contrast-100" src="./image/THAILAND.png">
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white transition duration-500 group-hover:opacity-0 group-active:opacity-0">
+              <span class="font-Island-font text-[40px] sm:text-[48px]">Phetchabun</span>
+              <span class="font-primary-font text-[16px] sm:text-[24px] font-medium">THAILAND</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col gap-2.5 items-center ">
+        <div class="relative group select-none">
+          <img class="brightness-50 contrast-130 transition duration-500 ease-in-out group-hover:scale-105 group-hover:brightness-100 group-hover:contrast-100 group-active:scale-105 group-active:brightness-100 group-active:contrast-100" src="./image/Australia.png">
+          <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white transition duration-500 group-hover:opacity-0 group-active:opacity-0">
+            <span class="font-Island-font text-[40px] sm:text-[48px]">Sydney</span>
+            <span class="font-primary-font text-[16px] sm:text-[24px] font-medium">Australia</span>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-2.5 items-center">
+          <div class="relative group select-none">
+            <img class="brightness-50 contrast-130 transition duration-500 ease-in-out group-hover:scale-105 group-hover:brightness-100 group-hover:contrast-100 group-active:scale-105 group-active:brightness-100 group-active:contrast-100" src="./image/FRANCE.png">
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white transition duration-500 group-hover:opacity-0 group-active:opacity-0">
+              <span class="font-Island-font text-[40px] sm:text-[48px]">Paris</span>
+              <span class="font-primary-font text-[16px] sm:text-[24px] font-medium">FRANCE</span>
+            </div>
+          </div>
+          <div class="relative group select-none">
+            <img class="brightness-50 contrast-130 transition duration-500 ease-in-out group-hover:scale-105 group-hover:brightness-100 group-hover:contrast-100 group-active:scale-105 group-active:brightness-100 group-active:contrast-100" src="./image/CHINA.png">
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white transition duration-500 group-hover:opacity-0 group-active:opacity-0">
+              <span class="font-Island-font text-[40px] sm:text-[48px]">Wuxi</span>
+              <span class="font-primary-font text-[16px] sm:text-[24px] font-medium">CHINA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-      <div class="relative group">
-      <img class="brightness-50 contrast-130 transition duration-500 ease-in-out group-hover:scale-105 group-hover:brightness-100 group-hover:contrast-100 group-active:scale-105 group-active:brightness-100 group-active:contrast-100" src="./image/UAE.png">
-      <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white transition duration-500 group-hover:opacity-0 group-active:opacity-0">
-        <span class="font-Island-font text-[40px] sm:text-[48px]">Dubai</span>
-        <span class="font-primary-font text-[16px] sm:text-[24px] font-medium">UAE</span>
-      </div>
-      </div>
-    </div >
-    <div class="flex flex-col gap-2.5 items-center">
-      <div class="relative group">
-      <img class="brightness-50 contrast-130 transition duration-500 ease-in-out group-hover:scale-105 group-hover:brightness-100 group-hover:contrast-100 group-active:scale-105 group-active:brightness-100 group-active:contrast-100" src="./image/INDONESIA.png">
-      <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white transition duration-500 group-hover:opacity-0 group-active:opacity-0">
-        <span class="font-Island-font text-[40px] sm:text-[48px]">Bali</span>
-        <span class="font-primary-font text-[16px] sm:text-[24px] font-medium">INDONESIA</span>
-      </div>
-      </div>
-      <div class="relative group">
-      <img class="brightness-50 contrast-130 transition duration-500 ease-in-out group-hover:scale-105 group-hover:brightness-100 group-hover:contrast-100 group-active:scale-105 group-active:brightness-100 group-active:contrast-100" src="./image/THAILAND.png">
-      <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white transition duration-500 group-hover:opacity-0 group-active:opacity-0 ">
-        <span class="font-Island-font text-[40px] sm:text-[48px]">Phetchabun</span>
-        <span class="font-primary-font text-[16px] sm:text-[24px] font-medium">THAILAND</span>
-      </div>
-      </div>
-    </div>
-    </div>
-    <div class="flex flex-col gap-2.5 items-center ">
-      <div class="relative group">
-      <img class="brightness-50 contrast-130 transition duration-500 ease-in-out group-hover:scale-105 group-hover:brightness-100 group-hover:contrast-100 group-active:scale-105 group-active:brightness-100 group-active:contrast-100" src="./image/Australia.png">
-      <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white transition duration-500 group-hover:opacity-0 group-active:opacity-0">
-        <span class="font-Island-font text-[40px] sm:text-[48px]">Sydney</span>
-        <span class="font-primary-font text-[16px] sm:text-[24px] font-medium">Australia</span>
-      </div>
-      </div>
-      <div class="grid grid-cols-2 gap-2.5 items-center">
-      <div class="relative group">
-      <img class="brightness-50 contrast-130 transition duration-500 ease-in-out group-hover:scale-105 group-hover:brightness-100 group-hover:contrast-100 group-active:scale-105 group-active:brightness-100 group-active:contrast-100" src="./image/FRANCE.png">
-      <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white transition duration-500 group-hover:opacity-0 group-active:opacity-0">
-        <span class="font-Island-font text-[40px] sm:text-[48px]">Paris</span>
-        <span class="font-primary-font text-[16px] sm:text-[24px] font-medium">FRANCE</span>
-      </div>
-      </div>
-      <div class="relative group">
-      <img class="brightness-50 contrast-130 transition duration-500 ease-in-out group-hover:scale-105 group-hover:brightness-100 group-hover:contrast-100 group-active:scale-105 group-active:brightness-100 group-active:contrast-100" src="./image/CHINA.png">
-      <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white transition duration-500 group-hover:opacity-0 group-active:opacity-0">
-        <span class="font-Island-font text-[40px] sm:text-[48px]">Wuxi</span>
-        <span class="font-primary-font text-[16px] sm:text-[24px] font-medium">CHINA</span>
-      </div>
-      </div>
-      </div>
-    </div>
-    </div>
-    </div>
-
 </section>
 <section class="Experience py-12.5">
   <div class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-14.5 px-5 md:px-0 2xl:px-40 ">
@@ -354,6 +379,7 @@
     </div>
   </div>
 </section>
+
 <footer class="py-2">
   <div class="container mx-auto  grid grid-cols-1  md:grid-cols-2 gap-y-8 lg:grid-cols-[1.5fr_1fr_1fr_1fr] items-center px-5 md:px-0 2xl:px-40">
     

@@ -20,9 +20,22 @@
     <div>
       <img src="./image/logo 1.png">
     </div>
-    <div class="block md:hidden text-2xl" >
-      <i class="fa-solid fa-bars"></i>
-    </div>
+    <div class="dropdown dropdown-bottom dropdown-end md:hidden">
+  
+  <div tabindex="0" role="button" class="btn btn-ghost">
+    <i class="fa-solid fa-bars text-2xl"></i>
+  </div>
+  <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+    <li><a href="./index.html" class="font-primary-font text-[18px] font-semibold hover:text-secondary-color">Home</a></li>
+    <li><a href="./About.html" class="font-primary-font text-[18px] font-semibold hover:text-secondary-color">About</a></li>
+    <li><a href="./Tours.html" class="font-primary-font text-[18px] font-semibold hover:text-secondary-color">Tours</a></li>
+    <li><a href="./Login.html" class="font-primary-font text-[18px] font-semibold hover:text-secondary-color">Login</a></li>
+    <button class="px-5.25 py-2 bg-primary-color rounded-3xl text-white transition duration-400 ease-in-out hover:bg-secondary-color font-primary-font text-[18px] font-semibold">
+              <a href="./Register.html">Register</a>
+            </button>
+  </ul>
+</div>
+    
     <div class=" gap-9.5 justify-between items-center hidden md:flex" >
       <nav>
         <ul class="flex gap-7.5 ">
@@ -52,6 +65,7 @@
   </div>
   
 </header>
+<main>
 <section class="Alltours pb-12.5">
   <div class="bg-[url(./image/alltours.png)] bg-cover bg-center w-full h-100 ">
     <div class="flex items-center justify-center h-full">
@@ -210,6 +224,7 @@
     </div>
   </div>
 </section>
+</main>
 <footer class="py-2">
   <div class="container mx-auto  grid grid-cols-1  md:grid-cols-2 gap-y-8 lg:grid-cols-[1.5fr_1fr_1fr_1fr] items-center px-5 md:px-0 2xl:px-40">
     
